@@ -17,7 +17,7 @@ Abaixo estão listados todos os sistemas desenvolvidos, com links diretos para s
 ### 🩺 2. Sistema Médico
 * **O que faz:** Controla o cadastro de pacientes (com trava de CPF único), médicos e o agendamento de consultas por especialidade.
 * **Conceitos aplicados:** Restrição de unicidade (`UNIQUE KEY`), chaves estrangeiras (`FOREIGN KEY`) e relacionamentos entre tabelas.
-* **📂 [Acessar arquivos desta atividade](./02_Sistema_Medico)**
+* **📂 [Acessar arquivos desta atividade](./medicoscript.sql)**
 
 ### ⏳ 3. Próxima Atividade
 * *Espaço reservado para o próximo desafio...*
