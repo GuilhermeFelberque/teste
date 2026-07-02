@@ -1,22 +1,29 @@
-# 🚗 Sistema de Controle de Estacionamento (Banco de Dados)
+# 🚀 Minhas Atividades de Java com Banco de Dados
 
-Este repositório contém o script de modelagem e criação de um banco de dados relacional para um **Sistema de Controle de Estacionamento**. O modelo foi projetado de forma simples e eficiente para gerenciar o fluxo de entrada, permanência e saída (com histórico de pagamento) de veículos.
-
-## 🗺️ Arquitetura do Banco de Dados
-
-O sistema é composto por 3 tabelas que organizam o ciclo de vida de um veículo dentro do estacionamento:
-
-1. **`veiculos`**: Cadastro básico que associa a placa do veículo ao seu tipo (ex: Carro, Moto, Caminhonete). Funciona como uma tabela de referência.
-2. **`movimentacao`**: Controla o pátio em tempo real. Armazena apenas os veículos que **estão atualmente estacionados**, registrando o momento exato da entrada.
-3. **`historico`**: Armazena o registro permanente de todas as operações finalizadas. Quando um veículo sai e o pagamento é efetuado, os dados saem da tabela de `movimentacao` e são consolidados aqui, incluindo o horário de saída e o valor cobrado.
+Este repositório foi criado para centralizar e organizar todas as atividades práticas desenvolvidas durante as aulas de Banco de Dados e integração com Java (JDBC). Aqui você encontrará os scripts SQL e os códigos-fonte de cada projeto.
 
 ---
 
-## 🚀 Como Executar o Script
+## 📌 Índice de Projetos
 
-Este script foi desenvolvido utilizando a sintaxe do **MySQL / MariaDB**.
+Abaixo estão listados todos os sistemas desenvolvidos, com links diretos para suas respectivas pastas e uma breve descrição do que foi aprendido.
 
-### Passo a Passo:
-1. Abra o seu gerenciador de banco de dados de preferência (ex: MySQL Workbench, DBeaver, phpMyAdmin).
-2. Copie o código contido no bloco abaixo.
-3. Execute o script completo para criar o banco de dados `sistemaestacionamento_db`, as tabelas e as relações necessárias.
+### 🚗 1. Sistema de Controle de Estacionamento
+* **O que faz:** Gerencia o fluxo de entrada, permanência e saída de veículos, calculando o valor a ser pago e guardando um histórico.
+* **Conceitos aplicados:** `PRIMARY KEY`, `AUTO_INCREMENT`, chaves estrangeiras e manipulação de datas (`DATETIME`).
+* **📂 [Acessar arquivos desta atividade](./01_Controle_Estacionamento)**
+
+### 🩺 2. Sistema Médico
+* **O que faz:** Controla o cadastro de pacientes (com trava de CPF único), médicos e o agendamento de consultas por especialidade.
+* **Conceitos aplicados:** Restrição de unicidade (`UNIQUE KEY`), chaves estrangeiras (`FOREIGN KEY`) e relacionamentos entre tabelas.
+* **📂 [Acessar arquivos desta atividade](./02_Sistema_Medico)**
+
+### ⏳ 3. Próxima Atividade
+* *Espaço reservado para o próximo desafio...*
+
+---
+
+## 🛠️ Tecnologias Utilizadas Geral
+* **Linguagem de Programação:** Java
+* **Banco de Dados:** MySQL / MariaDB
+* **Conexão:** JDBC (Java Database Connectivity)
