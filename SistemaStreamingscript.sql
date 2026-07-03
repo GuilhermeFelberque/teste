@@ -10,7 +10,7 @@ USE contausuario;
 -- ============================================
 -- Tabela de usuários
 -- ============================================
-CREATE TABLE usuarios (
+CREATE TABLE IF NOT EXISTS usuarios (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(150) NOT NULL,
     email VARCHAR(150) NOT NULL,
@@ -20,7 +20,7 @@ CREATE TABLE usuarios (
 -- ============================================
 -- Tabela de planos
 -- ============================================
-CREATE TABLE planos (
+CREATE TABLE IF NOT EXISTS planos (
     id INT AUTO_INCREMENT PRIMARY KEY,
     tipoPlano VARCHAR(50) NOT NULL,
     preco DECIMAL(10,2) NOT NULL,
@@ -30,7 +30,7 @@ CREATE TABLE planos (
 -- ============================================
 -- Tabela de assinaturas
 -- ============================================
-CREATE TABLE assinaturas (
+CREATE TABLE IF NOT EXISTS assinaturas (
     id INT AUTO_INCREMENT PRIMARY KEY,
     usuarios_id INT NOT NULL,
     plano_id INT NOT NULL,
