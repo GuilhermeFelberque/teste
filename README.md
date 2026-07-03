@@ -50,6 +50,12 @@ Abaixo estão listados todos os sistemas desenvolvidos, com links diretos para s
 * **📂 [Acessar arquivos desta atividade](./Sistema_De_Reserva_De_Hotel_Refatorado_Interacao_Banco_De_Dados)**
 * **📄 [Ver Script SQL desta atividade](./SistemaReservaHotelscript.sql)**
 
+### 🛒 8. Sistema de Compra Online e Recibos
+* **O que faz:** Simula o fluxo de um e-commerce, separando o cadastro físico de pessoas, a identificação como clientes com endereço de entrega, o fechamento da compra (com frete e valores) e a emissão de recibos e catálogo de produtos.
+* **Conceitos aplicados:** Uso de campos enumerados (`ENUM`) para restringir as formas de pagamento válidas, chaves estrangeiras (`FOREIGN KEY`) para criar vínculos e herança lógica entre tabelas (Pessoa -> Cliente) e tipos numéricos de alta capacidade `DECIMAL(15,2)`.
+* **📂 [Acessar arquivos desta atividade](./08_Compra_Online)**
+* **📄 [Ver Script SQL desta atividade](./CompraOnlinescript.sql)**
+
 ---
 
 ## 🛠️ Tecnologias Utilizadas Geral
