@@ -24,7 +24,7 @@ Abaixo estão listados todos os sistemas desenvolvidos, com links diretos para s
 * **O que faz:** Faz a gestão do acesso de utilizadores a diferentes planos de subscrição (ex: Bronze, Prata, Ouro) e controla as restrições de e-mail único.
 * **Conceitos aplicados:** Uso de chaves exclusivas (`UNIQUE KEY`), tabelas associativas para relações muitos-para-muitos e mapeamento preciso de valores monetários com `DECIMAL`.
 * **📂 [Acessar arquivos desta atividade](./Sistema_De_Contas_De_UsuarioStreamig_Interacao_Banco_De_Dados)**
-* **📄 [Ver Script SQL desta atividade](./Streamingscript.sql)**
+* **📄 [Ver Script SQL desta atividade](./SistemaStreamingscript.sql)**
 
 ### 📚 4. Sistema de Biblioteca Escolar
 * **O que faz:** Controla o empréstimo de livros por alunos, acompanhando o status de disponibilidade do livro, o total de obras com o estudante e se ele possui multas pendentes.
