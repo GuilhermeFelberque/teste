@@ -10,7 +10,7 @@ USE sistemamedico;
 -- ============================================
 -- Tabela de pacientes
 -- ============================================
-CREATE TABLE pacientes (
+CREATE TABLE IF NOT EXISTS pacientes (
     id INT AUTO_INCREMENT PRIMARY KEY,
     cpf VARCHAR(11) NOT NULL,
     nome VARCHAR(150) NOT NULL,
@@ -20,7 +20,7 @@ CREATE TABLE pacientes (
 -- ============================================
 -- Tabela de médicos
 -- ============================================
-CREATE TABLE medicos (
+CREATE TABLE IF NOT EXISTS medicos (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(150) NOT NULL,
     especialidade VARCHAR(50) NOT NULL
@@ -29,7 +29,7 @@ CREATE TABLE medicos (
 -- ============================================
 -- Tabela de consultas
 -- ============================================
-CREATE TABLE consulta (
+CREATE TABLE IF NOT EXISTS consulta (
     id INT AUTO_INCREMENT PRIMARY KEY,
     paciente_id INT NOT NULL,
     especialidade VARCHAR(50) NOT NULL,
